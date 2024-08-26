@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Mods</title>
+    <title>Bike Modification Hub</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,6 +41,27 @@
             background-color: #555;
         }
 
+        .cover-image {
+            width: 100%;
+            height: 350px;
+            background-image: url(''); /* Replace with your cover image URL */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .cover-image h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            font-size: 2rem;
+        }
+
         .container {
             width: 80%;
             margin: 20px auto;
@@ -56,6 +77,11 @@
             background-color: #fff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .featured .mod:hover {
+            transform: scale(1.05); /* Enlarge the section slightly on hover */
         }
 
         .featured img {
@@ -66,12 +92,14 @@
         .gallery {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 10px;
         }
+        
 
         .gallery img {
             width: calc(33.333% - 20px);
             height: auto;
+            transition: transform 0.3s ease;
         }
 
         .contact {
@@ -95,13 +123,13 @@
         }
 
         .contact input, .contact textarea {
-            padding: 10px;
-            margin-bottom: 10px;
+            padding: 4px;
+            margin-bottom: 2px;
             border: 1px solid #ddd;
         }
 
         .contact button {
-            padding: 10px;
+            padding: 4px;
             background-color: #333;
             color: #fff;
             border: none;
@@ -123,7 +151,7 @@
 </head>
 <body>
     <header>
-        <h1>Machine Mods</h1>
+        <h1>Bike Modification Hub</h1>
     </header>
 
     <nav>
@@ -131,6 +159,10 @@
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
     </nav>
+
+    <section class="cover-image">
+        <h2>Welcome to the Ultimate Bike Modification Hub</h2>
+    </section>
 
     <div class="container">
         <section id="featured" class="featured">
@@ -147,13 +179,18 @@
             <div class="mod">
                 <img src="performancetyre.jpg" alt="Bike Mod 3">
                 <h2>Performance Tires</h2>
-                <p>Get better grip and handling with high-performance tires.</p>
+                <p>Get a better grip and handling with high-performance tires.</p>
+            </div>
+            <div class="mod">
+                <img src="engine.jpg" alt="Bike Mod 3">
+                <h2>Genuine parts</h2>
+                <p>Make Unleash the true power of your beast</p>
             </div>
         </section>
 
         <section id="gallery" class="gallery">
             <h2>Modification Gallery</h2>
-            <img src="1gt650.jpg" alt="Modification 1">
+            <img src="mod1.jpg" alt="Modification 1">
             <img src="mod2.jpg" alt="Modification 2">
             <img src="mod3.jpg" alt="Modification 3">
             <img src="mod4.jpg" alt="Modification 4">
